@@ -1,0 +1,9 @@
+.venv/
+.env
+data/raw/
+data/recipes.db
+data/recipes.db-journal
+data/build_stats.json
+__pycache__/
+*.pyc
+.pytest_cache/

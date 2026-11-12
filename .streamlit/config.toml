@@ -1,0 +1,16 @@
+[theme]
+base = "light"
+primaryColor = "#D9480F"            # paprika
+backgroundColor = "#FFF9F2"         # warm cream
+secondaryBackgroundColor = "#FFF0DF" # pastry
+textColor = "#3B2A24"               # cocoa
+font = "sans serif"
+
+[client]
+toolbarMode = "minimal"              # hides Streamlit's "Deploy" button and developer menu
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

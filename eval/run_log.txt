@@ -1,0 +1,31 @@
+PASS T1-search-refine - 495 → 78 recipes
+PASS T1-count - strict 16,090 (13.09%), broad 20,240 of 122,929
+PASS T1-rank - steps [1, 1, 1, 1, 1]; analysed 14,352
+PASS T1-describe - mean 10.36 (oracle 10.36), median 9.0
+PASS T1-unsupported - refused with explanation
+PASS T2-match-followup - Fiesta Egg Skillet (30); Curried Rice With Smoked Trout (28); Scrumptious Scramble (26)
+PASS T2-no-match - 5 alternatives, e.g. ["contains gluten: '1 (8 ounce) package lasagna noodles, broken into pieces'"]
+PASS T2-quantity - ['sufficient: have 2, recipe needs 2', 'quantity NOT verified (recipe uses volume, you gave mass; no reliable density/size conversion in the dataset)', 'INSUFFICIENT: have 2, recipe needs 6']
+PASS T3-banana-bread-eggs - Country Banana Bread → applesauce (moderate); status low_confidence
+PASS T3-pasta-cream-dairy - Key West Penne: cream → vegetable broth; secondary 1 cup grated Parmesan cheese→nutritional yeast
+PASS T3-weak-evidence - 'eggs' is a primary/structural ingredient of this dish and the best local evidence (flaxseed, moderate) is not strong en
+PASS T3-not-present - 'chocolate' does not appear in the ingredient list of ck/foCIv1g.W0SyPMLF5DWS/ZdeQBRi; nothing to substitute.
+PARSE OK  Find a penne pasta recipe
+PARSE OK  I cannot have dairy
+PARSE OK  How many recipes contain both garlic and onion? What percentage of the dataset is that?
+PARSE OK  Among recipes containing tomato, which five have the fewest instruction steps?
+PARSE OK  I have eggs, onions, tomatoes, and rice. Suggest five recipes, no peanuts, at most six steps.
+PARSE OK  Exclude eggs too
+PARSE OK  Take this banana bread recipe and remove eggs.
+PARSE OK  How many calories does it have?
+PARSE OK  show me the instructions for the second one
+PARSE OK  What are the 10 most common ingredients in Epicurious recipes?
+CONV done: Find a penne pasta recipe
+CONV done: How many recipes contain both garlic and onion? What percent
+CONV done: I have eggs, onions, tomatoes, and rice. Suggest five recipe
+CONV done: Take a banana bread recipe and remove eggs. Use only ingredi
+CONV done: Find a creamy penne pasta with heavy cream
+CONV done: I have tofu and kale. Find me a lasagna with at most 1 step,
+CONV done: Show me a frittata
+
+12/12 tool-level cases passed. Report: eval/results.md
